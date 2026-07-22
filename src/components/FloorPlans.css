@@ -1,0 +1,38 @@
+.floor-plans__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.floor-plans__item {
+  display: block;
+  text-decoration: none;
+}
+
+.floor-plans__image {
+  width: 100%;
+  border: 1px solid var(--color-stone);
+  border-radius: 4px;
+}
+
+.floor-plans__label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .floor-plans__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .floor-plans__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
