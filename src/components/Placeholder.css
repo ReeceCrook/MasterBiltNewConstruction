@@ -1,0 +1,21 @@
+.placeholder-box {
+  width: 100%;
+  background: var(--color-stone);
+  border: 1px dashed var(--color-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.placeholder-box__text {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.placeholder-box__text code {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.8rem;
+}

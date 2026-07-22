@@ -1,0 +1,13 @@
+.logo--image {
+  height: 36px;
+  width: auto;
+}
+
+.logo--text {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--color-accent);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
