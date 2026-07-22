@@ -1,0 +1,8 @@
+.description__inner {
+  max-width: 65ch;
+}
+
+.description__paragraph {
+  color: var(--color-text);
+  line-height: 1.7;
+}
