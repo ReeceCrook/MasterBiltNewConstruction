@@ -16,9 +16,9 @@ function App() {
       <Hero />
       <FactsBar />
       <Description />
+      <FloorPlans />
       <ViewsSection />
       <ProgressGallery />
-      <FloorPlans />
       <Map />
       <Contact />
       <Footer />

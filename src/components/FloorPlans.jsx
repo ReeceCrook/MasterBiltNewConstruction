@@ -13,7 +13,6 @@ export default function FloorPlans() {
     <section className="section section--alt floor-plans">
       <div className="section__inner">
         <p className="eyebrow">Floor Plans</p>
-        <h2>An open, livable main level</h2>
         <div className="floor-plans__grid">
           {FLOORPLANS.map(({ filename, label }) => {
             const url = getPhoto(filename)

@@ -12,7 +12,7 @@ export default function ProgressGallery() {
   )
 
   return (
-    <section className="section progress-gallery">
+    <section className="section section--alt progress-gallery">
       <div className="section__inner">
         <p className="eyebrow">Under Construction</p>
         <h2>Follow along as it's built</h2>

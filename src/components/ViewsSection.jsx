@@ -6,7 +6,7 @@ export default function ViewsSection() {
   const viewUrl = getPhoto('view.jpg')
 
   return (
-    <section className="section section--alt views">
+    <section className="section views">
       <div className="section__inner">
         <p className="eyebrow">The Views</p>
         <h2>360&deg; views to include Pikes Peak from the back patio.</h2>
