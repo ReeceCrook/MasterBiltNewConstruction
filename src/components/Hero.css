@@ -41,7 +41,8 @@
 
 .hero__title {
   color: var(--color-white);
-  font-size: 2.75rem;
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  white-space: nowrap;
   margin-bottom: 0.25rem;
 }
 
