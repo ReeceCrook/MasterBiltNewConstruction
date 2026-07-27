@@ -1,7 +1,7 @@
-import { ADDRESS } from '../data/content'
+import { ADDRESS, CITY_STATE_ZIP } from '../data/content'
 import './Map.css'
 
-const FULL_ADDRESS = `${ADDRESS}, Colorado Springs, CO 80908`
+const FULL_ADDRESS = `${ADDRESS}, ${CITY_STATE_ZIP}`
 
 export default function Map() {
   const query = encodeURIComponent(FULL_ADDRESS)

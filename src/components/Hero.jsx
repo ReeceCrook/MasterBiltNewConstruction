@@ -1,7 +1,9 @@
 import { getPhoto } from '../data/photos'
 import Placeholder from './Placeholder'
-import { NEIGHBORHOOD, TAGLINE, PRICE, ADDRESS } from '../data/content'
+import { TAGLINE, PRICE, ADDRESS, CITY_STATE_ZIP } from '../data/content'
 import './Hero.css'
+
+const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${ADDRESS}, ${CITY_STATE_ZIP}`)}`
 
 export default function Hero() {
   const heroUrl = getPhoto('hero-render.jpg')
@@ -27,12 +29,20 @@ export default function Hero() {
           className="hero__image"
         />
       )}
-      <div className="hero__scrim" />
-      <div className="hero__content">
-        <p className="eyebrow eyebrow--on-dark">MasterBilt Homes in {NEIGHBORHOOD}</p>
-        <h1 className="hero__title">{ADDRESS}</h1>
-        <p className="hero__price">{PRICE}</p>
-        <p className="hero__tagline">{TAGLINE}</p>
+      <div className="hero__panel hero__panel--dark">
+        <div className="hero__panel-inner">
+          <h1 className="hero__title">
+            <a href={MAPS_URL} target="_blank" rel="noopener" className="hero__title-link">
+              {ADDRESS}
+            </a>
+          </h1>
+          <p className="hero__subtitle">{TAGLINE}</p>
+        </div>
+      </div>
+      <div className="hero__panel hero__panel--light">
+        <div className="hero__panel-inner">
+          <p className="hero__price">{PRICE}</p>
+        </div>
       </div>
     </section>
   )

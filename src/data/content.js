@@ -3,6 +3,7 @@ export const TAGLINE = 'New mountain modern home on 5 acres with Pikes Peak view
 export const STATUS_BADGE = 'Coming soon!'
 export const PRICE = '$1,750,000'
 export const ADDRESS = '10126 Alamar Way'
+export const CITY_STATE_ZIP = 'Colorado Springs, CO 80908'
 
 export const CONTACT = {
   name: 'Jim Stiltner',
