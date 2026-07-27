@@ -1,5 +1,5 @@
 export const NEIGHBORHOOD = 'Winsome'
-export const TAGLINE = 'A new mountain-modern residence in Winsome'
+export const TAGLINE = 'New mountain modern home on 5 acres with Pikes Peak views'
 export const STATUS_BADGE = 'Coming soon!'
 export const PRICE = '$1,750,000'
 export const ADDRESS = '10126 Alamar Way'

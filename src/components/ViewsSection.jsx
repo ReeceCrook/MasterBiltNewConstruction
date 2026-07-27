@@ -9,6 +9,7 @@ export default function ViewsSection() {
     <section className="section section--alt views">
       <div className="section__inner">
         <p className="eyebrow">The Views</p>
+        <h2>360&deg; views to include Pikes Peak from the back patio.</h2>
         <p className="views__intro">
           Winsome offers access to approximately 145 acres of open space and trails, right outside your door.
         </p>

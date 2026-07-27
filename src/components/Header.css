@@ -47,9 +47,12 @@
   .header__badge {
     order: 2;
     flex: 0 0 auto;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
   }
 
   .header__phone {
     order: 3;
+    font-size: 1.125rem;
   }
 }

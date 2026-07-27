@@ -29,7 +29,7 @@ export default function Hero() {
       )}
       <div className="hero__scrim" />
       <div className="hero__content">
-        <p className="eyebrow eyebrow--on-dark">MasterBilt Homes &middot; {NEIGHBORHOOD}</p>
+        <p className="eyebrow eyebrow--on-dark">MasterBilt Homes in {NEIGHBORHOOD}</p>
         <h1 className="hero__title">{ADDRESS}</h1>
         <p className="hero__price">{PRICE}</p>
         <p className="hero__tagline">{TAGLINE}</p>

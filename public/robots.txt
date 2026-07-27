@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://REPLACE_WITH_DOMAIN.com/sitemap.xml
+Sitemap: https://10126alamarway.com/sitemap.xml
