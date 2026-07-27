@@ -19,7 +19,14 @@ export default function FloorPlans() {
             const url = getPhoto(filename)
             return url ? (
               <a key={filename} href={url} target="_blank" rel="noopener" className="floor-plans__item">
-                <img src={url} alt={label} className="floor-plans__image" />
+                <img
+                  src={url}
+                  alt={label}
+                  className="floor-plans__image"
+                  width={3300}
+                  height={5100}
+                  loading="lazy"
+                />
                 <span className="floor-plans__label">{label}</span>
               </a>
             ) : (

@@ -5,7 +5,7 @@ import Description from './components/Description'
 import ViewsSection from './components/ViewsSection'
 import ProgressGallery from './components/ProgressGallery'
 import FloorPlans from './components/FloorPlans'
-import Flyer from './components/Flyer'
+import Map from './components/Map'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -19,7 +19,7 @@ function App() {
       <ViewsSection />
       <ProgressGallery />
       <FloorPlans />
-      <Flyer />
+      <Map />
       <Contact />
       <Footer />
     </>

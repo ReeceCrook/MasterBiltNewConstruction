@@ -10,7 +10,14 @@ export default function Hero() {
     <section id="top" className="hero">
       {heroUrl ? (
         <a href={heroUrl} target="_blank" rel="noopener" className="hero__image-link">
-          <img src={heroUrl} alt="Exterior render of the new home in Winsome" className="hero__image" />
+          <img
+            src={heroUrl}
+            alt="Exterior render of the new home in Winsome"
+            className="hero__image"
+            width={2099}
+            height={1182}
+            fetchPriority="high"
+          />
         </a>
       ) : (
         <Placeholder
@@ -22,8 +29,8 @@ export default function Hero() {
       )}
       <div className="hero__scrim" />
       <div className="hero__content">
-        <p className="eyebrow eyebrow--on-dark">MasterBilt Homes &middot; {ADDRESS}</p>
-        <h1 className="hero__title">{NEIGHBORHOOD}</h1>
+        <p className="eyebrow eyebrow--on-dark">MasterBilt Homes &middot; {NEIGHBORHOOD}</p>
+        <h1 className="hero__title">{ADDRESS}</h1>
         <p className="hero__price">{PRICE}</p>
         <p className="hero__tagline">{TAGLINE}</p>
       </div>

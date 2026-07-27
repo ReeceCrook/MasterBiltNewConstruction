@@ -12,6 +12,7 @@
 
 .floor-plans__image {
   width: 100%;
+  height: auto;
   border: 1px solid var(--color-stone);
   border-radius: 4px;
 }

@@ -5,6 +5,7 @@
 
 .views__image {
   width: 100%;
+  height: auto;
   border-radius: 4px;
   margin-top: 1.5rem;
   object-fit: cover;
