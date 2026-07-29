@@ -1,6 +1,6 @@
 export const NEIGHBORHOOD = 'Winsome'
 export const TAGLINE = 'New mountain modern home on 5 acres with Pikes Peak views'
-export const STATUS_BADGE = 'Coming soon!'
+export const STATUS_BADGE = 'Available!'
 export const PRICE = '$1,750,000'
 export const ADDRESS = '10126 Alamar Way'
 export const CITY_STATE_ZIP = 'Colorado Springs, CO 80908'
@@ -9,6 +9,10 @@ export const CONTACT = {
   name: 'Jim Stiltner',
   phone: '719-964-3526',
   phoneHref: 'tel:+17199643526',
+}
+
+export const SOCIAL = {
+  facebook: 'https://www.facebook.com/MasterbiltHomes/',
 }
 
 export const BODY_PARAGRAPHS = [

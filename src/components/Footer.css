@@ -14,10 +14,30 @@
   text-align: center;
 }
 
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
 .footer__phone {
   color: var(--color-white);
   text-decoration: none;
   font-weight: 600;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+}
+
+.footer__social:hover,
+.footer__social:focus-visible {
+  opacity: 1;
 }
 
 .footer .logo--text {
