@@ -1,5 +1,5 @@
 import { CONTACT, SOCIAL } from '../data/content'
-import { FacebookIcon } from './icons/SocialIcons'
+import facebookLogo from '../assets/icons8-facebook-48.png'
 import ContactForm from './ContactForm'
 import './Contact.css'
 
@@ -19,7 +19,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="contact__button contact__button--secondary"
           >
-            <FacebookIcon width={18} height={18} />
+            <img src={facebookLogo} alt="" width={18} height={18} />
             Follow on Facebook
           </a>
         </div>

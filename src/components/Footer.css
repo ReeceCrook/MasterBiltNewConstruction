@@ -30,7 +30,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
   opacity: 0.85;
   transition: opacity 0.15s ease;
 }

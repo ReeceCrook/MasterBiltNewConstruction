@@ -1,6 +1,6 @@
 import Logo from './Logo'
 import { CONTACT, SOCIAL } from '../data/content'
-import { FacebookIcon } from './icons/SocialIcons'
+import facebookLogo from '../assets/icons8-facebook-48.png'
 import './Footer.css'
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
             className="footer__social"
             aria-label="MasterBilt Homes on Facebook"
           >
-            <FacebookIcon />
+            <img src={facebookLogo} alt="" width={22} height={22} />
           </a>
           <a href={CONTACT.phoneHref} className="footer__phone">
             {CONTACT.phone}
