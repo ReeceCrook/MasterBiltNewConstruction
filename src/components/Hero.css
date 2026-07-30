@@ -1,6 +1,9 @@
 .hero {
   overflow: hidden;
-  background: var(--color-near-black);
+}
+
+.hero__media {
+  position: relative;
 }
 
 .hero__image-link {
@@ -11,7 +14,16 @@
 .hero__image {
   width: 100%;
   height: min(70vh, 80vw);
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.hero__badge {
+  position: absolute;
+  right: clamp(0.75rem, 3vw, 1.75rem);
+  bottom: clamp(0.75rem, 3vw, 1.75rem);
+  z-index: 1;
+  width: clamp(160px, 32vw, 260px);
+  height: auto;
 }
 
 .hero__panel {

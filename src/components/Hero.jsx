@@ -6,29 +6,35 @@ import './Hero.css'
 const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${ADDRESS}, ${CITY_STATE_ZIP}`)}`
 
 export default function Hero() {
-  const heroUrl = getPhoto('Rendering-with-Banner.png')
+  const heroUrl = getPhoto('hero-render.jpg')
+  const badgeUrl = getPhoto('Virtual rendering for illustration only.png')
 
   return (
     <section id="top" className="hero">
-      {heroUrl ? (
-        <a href={heroUrl} target="_blank" rel="noopener" className="hero__image-link">
-          <img
-            src={heroUrl}
-            alt="Rendering of the exterior of the new home in Winsome"
+      <div className="hero__media">
+        {heroUrl ? (
+          <a href={heroUrl} target="_blank" rel="noopener" className="hero__image-link">
+            <img
+              src={heroUrl}
+              alt="Rendering of the exterior of the new home in Winsome"
+              className="hero__image"
+              width={2099}
+              height={1182}
+              fetchPriority="high"
+            />
+          </a>
+        ) : (
+          <Placeholder
+            filename="hero-render.jpg"
+            aspectRatio="16 / 10"
+            label="Hero exterior render"
             className="hero__image"
-            width={2029}
-            height={687}
-            fetchPriority="high"
           />
-        </a>
-      ) : (
-        <Placeholder
-          filename="Rendering-with-Banner.png"
-          aspectRatio="16 / 10"
-          label="Hero exterior render"
-          className="hero__image"
-        />
-      )}
+        )}
+        {badgeUrl && (
+          <img src={badgeUrl} alt="Virtual rendering for illustration only" className="hero__badge" />
+        )}
+      </div>
       <div className="hero__panel hero__panel--dark">
         <div className="hero__panel-inner">
           <h1 className="hero__title">
