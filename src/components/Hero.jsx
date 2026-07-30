@@ -6,7 +6,7 @@ import './Hero.css'
 const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${ADDRESS}, ${CITY_STATE_ZIP}`)}`
 
 export default function Hero() {
-  const heroUrl = getPhoto('Artist Rendering.webp')
+  const heroUrl = getPhoto('Rendering-with-Banner.png')
 
   return (
     <section id="top" className="hero">
@@ -14,16 +14,16 @@ export default function Hero() {
         <a href={heroUrl} target="_blank" rel="noopener" className="hero__image-link">
           <img
             src={heroUrl}
-            alt="Artist rendering of the exterior of the new home in Winsome"
+            alt="Rendering of the exterior of the new home in Winsome"
             className="hero__image"
-            width={2022}
-            height={705}
+            width={2029}
+            height={687}
             fetchPriority="high"
           />
         </a>
       ) : (
         <Placeholder
-          filename="hero-render.jpg"
+          filename="Rendering-with-Banner.png"
           aspectRatio="16 / 10"
           label="Hero exterior render"
           className="hero__image"
