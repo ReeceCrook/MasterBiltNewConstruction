@@ -7,9 +7,11 @@ export default function Description() {
       <div className="section__inner description__inner">
         <p className="eyebrow">The Home</p>
         {BODY_PARAGRAPHS.map((paragraph, i) => (
-          <p key={i} className="description__paragraph">
-            {paragraph}
-          </p>
+          <p
+            key={i}
+            className="description__paragraph"
+            dangerouslySetInnerHTML={{ __html: paragraph }}
+          />
         ))}
       </div>
     </section>
